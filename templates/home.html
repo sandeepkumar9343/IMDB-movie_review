@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Review Classifier</title>
 	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
@@ -12,7 +12,7 @@
 		<div id="brandname">
 			Machine Learning App with Flask
 		</div>
-		<h2>Spam Detector For Email Messages</h2>
+		<h2>Review Classifier For Movie Reviews</h2>
 		
 	</div>
 	</header>
@@ -20,7 +20,7 @@
 	<div class="ml-container">
 
 		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Message Here</p>
+		<p>Enter Your Review Here</p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="6" cols="50"></textarea>
 		<br/>
